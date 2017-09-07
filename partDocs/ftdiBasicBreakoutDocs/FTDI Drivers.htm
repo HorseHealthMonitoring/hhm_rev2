@@ -1,0 +1,649 @@
+<html><head>
+<title>FTDI Drivers</title>
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="reply-to" content="webmaster@ftdichip.com">
+<meta name="Rating" content="General">
+<meta name="Language" content="en">
+<meta name="distribution" content="Global">
+<meta name="Copyright" content="© Future Technology Devices International Ltd. 2011">
+<meta name="Classification" content="Hardware">
+<meta name="keywords" content="USB RS232, USB Serial, USB Legacy, USB drivers, USB devices, USB dock, USB hub, FT8U232AM, FTDI, FT8U245AM, FT8U100AX, USB chips, USB UART, USB FIFO, USB Semiconductors, ASIC design, USB product design">
+<meta name="description" content="USB RS232 - FTDI designs and supplies USB semiconductor devices with Legacy support including royalty-free drivers. Application areas include USB RS232, ( USB Serial ), USB Parallel, USB Docking Stations, and upgrades of Legacy designs to USB.">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style fprolloverstyle="">A:hover {color: #FF0000}
+</style>
+<style type="text/css">
+
+.noborder
+      {
+        border:none;
+      }
+
+.style1 {
+	color: #000080;
+}
+.style16 {
+	border: thin solid #C0C0C0;
+	font-weight: bold;
+	text-align: center;
+}
+.style23 {
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+}
+.style18 {
+	border: thin solid #C0C0C0;
+	text-align: left;
+}
+.style22 {
+	border-left: medium none #C0C0C0;
+	border-right: medium none #C0C0C0;
+	border-top: medium none #C0C0C0;
+	border-bottom: thin solid #C0C0C0;
+	font-weight: bold;
+	text-align: center;
+}
+.style24 {
+	border-left: medium none #C0C0C0;
+	border-right: thin solid #C0C0C0;
+	border-top: medium none #C0C0C0;
+	border-bottom: thin solid #C0C0C0;
+	text-align: center;
+	font-weight: bold;
+}
+.style25 {
+	border-left: thin solid #C0C0C0;
+	border-right: medium none #C0C0C0;
+	border-top: medium none #C0C0C0;
+	border-bottom: thin solid #C0C0C0;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.style17 {
+	border-left: thin solid #C0C0C0;
+	border-right: thin none #C0C0C0;
+	border-top: thin solid #C0C0C0;
+	border-bottom: thin solid #C0C0C0;
+	font-weight: bold;
+	text-align: center;
+}
+
+.style19 {
+	border-left: thin solid #C0C0C0;
+	border-right: thin none #C0C0C0;
+	border-top: thin solid #C0C0C0;
+	border-bottom: thin solid #C0C0C0;
+	text-align: center;
+}
+.style20 {
+	border-left: thin solid #C0C0C0;
+	border-right: thin solid #C0C0C0;
+	border-top: thin solid #C0C0C0;
+	border-bottom: thin none #C0C0C0;
+	text-align: left;
+}
+.style21 {
+	border-left: thin solid #C0C0C0;
+	border-right: thin none #C0C0C0;
+	border-top: thin solid #C0C0C0;
+	border-bottom: thin none #C0C0C0;
+	text-align: left;
+}
+.style22 {
+	color: #0000FF;
+}
+	
+.style30 {
+	color: #0000FF;
+}
+	
+.auto-style3 {
+	text-align: left;
+}
+	
+</style>
+
+		<script type="text/javascript" async="" src="FTDI%20Drivers_files/ga.js"></script><script type="text/javascript" src="FTDI%20Drivers_files/google_script.js"></script>
+
+</head>
+<body vlink="#FFFFFF" topmargin="0" text="#000080" link="#FFFFFF" leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr> 
+    <td colspan="2" background="FTDI%20Drivers_files/ftdi_4.gif"><a href="http://www.ftdichip.com/"><img src="FTDI%20Drivers_files/ftdi_1.gif" width="175" height="78" border="0"></a><img src="FTDI%20Drivers_files/ftdi_2.gif" width="376" height="78"><img src="FTDI%20Drivers_files/ftdi_3.gif" width="94" height="78"></td>
+  </tr>
+  <tr valign="top"> 
+    <td valign="top" background="FTDI%20Drivers_files/ftdi_5.gif">
+    <img src="FTDI%20Drivers_files/ftdi_6.gif" width="551" height="42"></td>
+    <td valign="top" background="FTDI%20Drivers_files/ftdi_5.gif" align="right">&nbsp;
+    </td>
+  </tr>
+</tbody></table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr valign="top"> 
+    <td width="1%"> 
+          <table style="text-align: left; text-indent: 0; word-spacing: 0; line-height: 150%; margin: 0" width="175" cellspacing="0" cellpadding="0" border="0" bgcolor="#6E8BB1">
+        <tbody><tr>
+    <td style="text-align: left; text-indent: 20; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25">
+    <span style="font-weight: 700">
+    <font face="Arial"><span style="text-decoration: none">
+    <a href="http://www.ftdichip.com/index.html"><span style="text-decoration: none">Home</span></a></span></font></span></td>
+        </tr>
+        <tr>
+    <td style="text-align: left; text-indent: 20; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25">
+    <span style="font-weight: 700">
+    <font face="Arial"><span style="text-decoration: none">
+    <a href="http://www.ftdichip.com/FTProducts.htm"><span style="text-decoration: none">Products</span></a></span></font></span></td>
+        </tr>
+        <tr>
+    <td style="text-align: left; text-indent: 20; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25">
+    <span style="font-weight: 700">
+    <font face="Arial"><span style="text-decoration: none">
+    <a href="http://www.ftdichip.com/FTDrivers.htm"><span style="text-decoration: none">Drivers</span></a></span></font></span></td>
+        </tr>
+        <tr>
+    <td style="text-align: left; text-indent: 30; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25" bgcolor="#819EC4">
+    <span style="font-weight: 700">
+    <font size="2" face="Arial"><a href="http://www.ftdichip.com/Drivers/VCP.htm">
+    <span style="text-decoration: none">VCP Drivers</span></a></font></span></td>
+        </tr>
+        <tr>
+    <td style="text-align: left; text-indent: 30; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25" bgcolor="#819EC4">
+    <span style="font-weight: 700">
+    <font size="2" face="Arial"><a href="http://www.ftdichip.com/Drivers/D2XX.htm">
+    <span style="text-decoration: none">D2XX Drivers</span></a></font></span></td>
+        </tr>
+        <tr>
+    <td style="text-align: left; text-indent: 30; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25" bgcolor="#819EC4">
+    <span style="font-weight: 700">
+    <font size="2" face="Arial"><a href="http://www.ftdichip.com/Drivers/D3XX.htm">
+    <span style="text-decoration: none">D3XX Drivers</span></a></font></span></td>
+        </tr>
+
+		
+        <tr>
+    <td style="text-indent: 20; text-align: left; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" valign="top" height="25"><font face="Arial">
+	<a href="http://www.ftdichip.com/FTFirmware.htm">
+    <span style="text-decoration: none; font-weight: 700">Firmware</span></a></font></td>
+        </tr>
+        <tr>
+    <td style="text-indent: 20; text-align: left; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" valign="top" height="25"><font face="Arial">
+    <a href="http://www.ftdichip.com/FTSupport.htm">
+    <span style="text-decoration: none; font-weight: 700">Support</span></a></font></td>
+        </tr><tr>
+    <td style="text-align: left; text-indent: 20; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25">
+    <span style="font-weight: 700">
+    <font face="Arial"><span style="text-decoration: none">
+    <a href="http://www.ftdichip.com/Android.htm"><span style="text-decoration: none">Android</span></a></span></font></span></td>
+        </tr>
+		<tr>
+    <td style="text-align: left; text-indent: 20; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25">
+    <span style="font-weight: 700">
+    <font face="Arial"><span style="text-decoration: none">
+    <a href="http://www.ftdichip.com/EVE.htm"><span style="text-decoration: none">EVE</span></a></span></font></span></td>
+        </tr>
+		<tr>
+    <td style="text-align: left; text-indent: 20; word-spacing: 0; line-height: 150%; margin-left:10; margin-right:0; margin-top:0; margin-bottom:0" valign="top" height="25">
+    <span style="font-weight: 700">
+    <font face="Arial"><span style="text-decoration: none">
+    <a href="http://www.ftdichip.com/MCU.html"><span style="text-decoration: none">MCU</span></a></span></font></span></td>
+        </tr>
+        <tr>
+    <td style="text-indent: 20; text-align: left; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" valign="top" height="25"><font face="Arial">
+    <span style="text-decoration: none; font-weight: 700">
+    <a href="http://www.ftdichip.com/FTSalesNetwork.htm"><span style="text-decoration: none">Sales 
+    Network</span></a></span></font></td>
+        </tr>
+        <tr>
+    <td style="text-indent: 20; text-align: left; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" valign="top" height="25">
+    <a target="_blank" href="http://shop.clickandbuild.com/cnb/shop/ftdichip">
+    <span style="text-decoration: none; font-weight: 700"><font face="Arial">Web 
+    Shop</font></span></a></td>
+        </tr>
+        <tr>
+    <td style="text-indent: 20; text-align: left; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" valign="top" height="25">
+    <b><font face="Arial"><a href="http://www.ftdichip.com/FTNewsLetter.htm">
+    <span style="text-decoration: none">Newsletter</span></a></font></b></td>
+        </tr>
+        <tr>
+    <td style="text-indent: 20; text-align: left; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" valign="top" height="25"><font face="Arial">
+    <a href="http://www.ftdichip.com/FTCorporate.htm">
+    <span style="text-decoration: none; font-weight: 700">Corporate</span></a></font></td>
+        </tr>
+        <tr>
+    <td style="text-indent: 20; text-align: left; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" valign="top" height="25"><font face="Arial">
+    <a href="http://www.ftdichip.com/FTContact.htm">
+    <span style="text-decoration: none; font-weight: 700">Contact Us</span></a></font></td>
+        </tr>
+        <tr valign="top">
+          <td style="text-align: left; text-indent: 20; word-spacing: 0; line-height: 150%; margin-left: 10; margin-right: 0; margin-top: 0; margin-bottom: 0" width="1%" height="2">
+            </td>
+        </tr>
+        <tr>
+          <td><img src="FTDI%20Drivers_files/ftdi_21.gif" width="175" height="29"></td>
+        </tr>
+                
+      </tbody></table>
+      <p style="font-family: Arial; font-size: 10pt; text-align: center; text-indent: 0; word-spacing: 0; line-height: 150%; margin: 0; font-weight: 700;">&nbsp;
+			  </p>
+			  
+<form action="http://www.ftdichip.com/searchresults.html" id="cse-search-box">
+  <div style="text-align: center; vertical-align:middle">
+    <input name="cx" value="014628871466428152281:vv2ecvdr1ky" type="hidden">
+    <input name="cof" value="FORID:10" type="hidden">
+    <input name="ie" value="UTF-8" type="hidden">
+    <input name="q" size="16" style="background: rgb(255, 255, 255) url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) no-repeat scroll left center; text-indent: 48px;" placeholder="Custom Search" type="text">&nbsp;
+	<input name="sa" src="FTDI%20Drivers_files/searchicon.gif" alt="Search" width="25" type="image" height="25">
+	  <br>
+	  <br>
+  </div>
+<input name="siteurl" value="www.ftdichip.com/FTDrivers.htm" type="hidden"><input name="ref" type="hidden"><input name="ss" type="hidden"></form>
+<script type="text/javascript" src="FTDI%20Drivers_files/brand"></script>
+
+ 
+
+
+<!--<p style="font-family: Arial; font-size: 10pt; text-align: center; text-indent: 0; word-spacing: 0; line-height: 150%; margin: 0; font-weight: 700;">
+	 Win a Nexus 9<br>
+	   <a class="style1" href="https://www.surveymonkey.com/r/FTDI_Survey_2015"><strong>Click here to Enter</strong></a></p>
+	  <p style="font-family: Arial; font-size: 10pt; text-align: center; text-indent: 0; word-spacing: 0; line-height: 150%; margin: 0; font-weight: 700;"><a href="https://www.surveymonkey.com/r/FTDI_Survey_2015">
+	  <strong>
+ <img src="Images/Nexus9front.png" width="100"></strong></a><a class="style1" href="http://www.surveymonkey.com/r/FTDI_CHIP_SURVEY_2015"><strong>
+	  </strong></a></p>
+	  <p style="font-family: Arial; font-size: 10pt; text-align: center; text-indent: 0; word-spacing: 0; line-height: 150%; margin: 0; font-weight: 700;"><br>
+	  </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+
+			 
+
+
+
+
+
+
+			 
+    </td>
+    <td width="99%" valign="top">
+<!-- Start -->
+<div align="left">
+<table style="text-indent: 0; word-spacing: 0; line-height: 150%; margin: 0; text-align:left" width="100%" height="623" cellspacing="6" cellpadding="0" border="0">
+  <!--NirO banner for KickStarter Project - commented on 7 Jan 2016-->
+ <!-- <tr> 
+    <a href="https://www.kickstarter.com/projects/1218034479/nero-an-energy-efficient-arduino-uno-compatible-de" target="_blank"><img border="0" src="../Images/NerO/NerO Web Banner.gif"></a>
+  </tr>-->
+  <!--NirO banner for KickStarter Project - commented on 7 Jan 2016-->
+  
+  
+  <!--banner-->
+  <!--<tr> 
+    <a href="FT-XPromoRegistration.htm">
+		   <center>
+    <img src="Images/EWBanner.jpg"/></center></a>
+    </tr>   !-->
+   <!--banner-->
+  
+  <!--ew2016 banner-->
+ <!-- <tr> 
+   <center><a href="/ew2016.htm" target="_blank"><img border="0" src="../Images/ew2016banner.jpg"></a></center>
+  </tr>-->
+   <!--ew2016 banner-->
+  <tbody><tr> 
+	<td height="23">
+	  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+	    <tbody><tr> 
+		  <td width="1%"><font face="Arial"><img src="FTDI%20Drivers_files/pointer_b.gif" width="22" height="22" border="0"></font></td>
+		  <td id="title" bgcolor="#6E8BB1"> <b>
+          <font face="Arial" color="#FFFFFF">&nbsp; Drivers</font></b></td>
+		</tr>
+	  </tbody></table>	
+	</td>
+  </tr>
+  <tr>
+	<td style="font-family: Arial; font-size: 10pt; text-align: left; text-indent: 0; word-spacing: 0; line-height: 150%; margin: 0" valign="top" height="154" align="left">
+		<div style="text-align:left;">
+		<p style="text-align: justify; margin-top: 0; margin-bottom: 0; line-height:150%">
+        <font size="2">PLEASE NOTE - When updating drivers, refer to the 
+		following document:
+		<a href="http://www.ftdichip.com/Support/Documents/AppNotes/AN_107_AdvancedDriverOptions_AN_000073.pdf" target="_blank" class="style1">
+		<font color="#0000FF">AN_107 - Advanced Driver Options</font></a></font></p><p style="text-align: justify; margin-top: 0; margin-bottom: 0; line-height:150%">
+        	&nbsp;</p><p style="text-align: justify; margin-top: 0; margin-bottom: 0; line-height:150%">
+        				<font size="2" face="Arial"><strong>New drivers are now available to support the <a href="http://www.ftdichip.com/Products/ICs/FT4222H.html" class="style1"><font color="#0000FF">FT4222H</font></a> 
+						- for D2XX drivers please
+						<a href="http://www.ftdichip.com/Drivers/D2XX.htm" class="style1">
+						<font color="#0000FF">click here</font></a>.
+						</strong></font>
+			</p><p style="text-align: justify; margin-top: 0; margin-bottom: 0; line-height:150%">
+        				&nbsp;</p><p style="text-align: justify; margin-top: 0; margin-bottom: 0; line-height:150%">
+        				<font size="2" face="Arial">&nbsp;Drivers are available which allow FTDI devices to work with 
+        the following operating systems:</font>
+			
+		<table style="font-family: Arial; font-size: 10pt; width:90%; text-align:left;" cellspacing="0" cellpadding="4" align="left">
+				<tbody><tr>
+				<td class="style18" style="width: 618px"><b>Windows Certified</b></td>
+				<td class="style18" style="width: 618px"><b>Others</b></td>
+				<td class="style18" style="width: 618px"><b>Legacy</b></td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 10 (32/64)</td>
+				<td class="style18" style="width: 618px">Linux</td>
+				<td class="style18" style="width: 618px">Windows Vista (32/64)</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 8.1 (32/64)</td>
+				<td class="style18" style="width: 618px">MAC OSX</td>
+				<td class="style18" style="width: 618px">Windows XP (32/64)</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 8 (32/64)</td>
+				<td class="style18" style="width: 618px">Windows CE (Version 4.2 and greater)</td>
+				<td class="style18" style="width: 618px">Windows 2000</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 7 (32/64)</td>
+				<td class="style18" style="width: 618px">Windows RT</td>
+				<td class="style18" style="width: 618px">Windows ME</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows Server 2016</td>
+				<td class="style18" style="width: 618px">Android</td>
+				<td class="style18" style="width: 618px">Windows 98</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows Server 2012 R2 x64</td>
+				<td class="style18" style="width: 618px">&nbsp;</td>
+				<td class="style18" style="width: 618px">MAC OS9</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows Server 2008 R2 x64</td>
+				<td class="style18" style="width: 618px">&nbsp;</td>
+				<td class="style18" style="width: 618px">MAC OS8</td>
+				</tr>
+				</tbody></table><br style="clear:both">
+			
+				
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+				
+				
+				
+			
+			
+			<!--<table align="left" cellpadding="4" cellspacing="0" style="font-family: Arial; font-size: 10pt; width:90%; text-align:left;">
+				<tr>
+				<td class="style18" style="width: 618px"><b>Windows Certified</b></td>
+				<td class="style18" style="width: 618px"><b>Others</b></td>
+				<td class="style18" style="width: 618px"><b>Legacy</b></td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 10 (32/64)</td>
+				<td class="style18" style="width: 618px">Linux</td>
+				<td class="style18" style="width: 618px">Windows Vista (32/64)</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 8.1 (32/64)</td>
+				<td class="style18" style="width: 618px">MAC OSX</td>
+				<td class="style18" style="width: 618px">Windows XP (32/64)</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 8 (32/64)</td>
+				<td class="style18" style="width: 618px">Windows CE (Version 4.2 and greater)</td>
+				<td class="style18" style="width: 618px">Windows 2000</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows 7 (32/64)</td>
+				<td class="style18" style="width: 618px">Windows RT</td>
+				<td class="style18" style="width: 618px">Windows ME</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows Server 2012 R2 x64</td>
+				<td class="style18" style="width: 618px">Android</td>
+				<td class="style18" style="width: 618px">Windows 98</td>
+				</tr>
+				<tr>
+				<td class="style18" style="width: 618px">Windows Server 2008 R2 x64</td>
+				<td class="noborder" style="width: 618px"> </td>
+				<td class="style18" style="width: 618px">MAC OS9</td>
+				</tr>
+				<tr>
+				<td class="noborder" style="width: 618px"> </td>
+				<td class="noborder" style="width: 618px"> </td>
+				<td class="style18" style="width: 618px">MAC OS8</td>
+				</tr>
+			</table><br style="clear:both">-->
+			
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        &nbsp;<ul style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0">
+          
+		    <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 10</font></li>
+			<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 10 x64</font></li>
+			<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 8.1</font></li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 8.1 x64</font></li>
+		   <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 8</font></li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 8 x64</font></li>
+		  
+		  	<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows Server2012</font></li>
+		  
+		  
+		  <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows Server 2008 R2</font></li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 7</font></li>
+				<li>
+          	  <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          	<font size="2" face="Arial">Windows 7 x64</font></li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows Server 2008</font></li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows Server 2008 x64</font></li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          Windows Vista</li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows Vista x64</font></li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          Windows Server 2003</li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          Windows Server 2003 x64</li>
+				<li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows XP</font></li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows XP x64</font></li>
+          <li>
+            <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+              <font size="2" face="Arial">Windows ME</font></li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows 98</font></li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Linux</font></li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Mac OS X</font></li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Mac OS 9</font></li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Mac OS 8</font></li>
+          <li>
+          <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+          <font size="2" face="Arial">Windows CE.NET (Version 4.2 and greater)</font></li>
+				<li>
+				  <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+			      <font size="2">Android</font></li>
+				  <li>
+				  <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+			      <font size="2">Windows RT</font></li>
+				</ul>
+       <!-- <p><strong>Support for  Windows 8</strong><br>
+          There is no official release of Windows 8, but FTDI have  validated that our drivers will function correctly &nbsp;with the Developer  Preview and the Consumer Preview of Windows 8.</p> -->
+		  
+        </p><p><strong>Support for WinCE</strong><br>
+FTDI drivers are available for Windows CE 4.2-5.2, 6.0/7.0 and 2013.
+</p>
+			<font size="2" face="Arial">
+		<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+		<strong>Support for older versions of Windows Desktop</strong>
+		</p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+	NOTE: Microsoft have ended support for certifying XP and VISTA through their WHCK test program. 
+			From revision 2.12.24 with Device Guard Support, the driver will not 
+			load on XP or VISTA. 
+		</p>
+
+        <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        &nbsp;</p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        	<font size="2"><strong>Differences in Driver API</strong></font></p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        	<font size="2" face="Arial">For most of these operating systems
+ two types of driver are available:  Virtual COM Port (VCP) drivers and 
+direct (D2XX) drivers.  The VCP driver emulates a standard PC serial 
+port such that the USB device may be communicated with as a standard 
+RS232 device.  The D2XX driver allows direct access to a USB device via a
+ DLL interface.</font></p><!-- <p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        &nbsp; --><p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        <font size="2" face="Arial">To locate the drivers you want to install 
+        for a device, select which of the driver types you wish to use (<a href="http://www.ftdichip.com/Drivers/VCP.htm" class="style1"><font color="#0000FF">VCP</font></a><font color="#0000FF">
+        </font>or <a href="http://www.ftdichip.com/Drivers/D2XX.htm" class="style1"><font color="#0000FF">D2XX</font></a>) and 
+        then locate the appropriate operating systems.&nbsp; With the exception 
+        of Windows 98 and Windows ME, all devices are supported in each driver 
+        package. </font><font size="2" face="Arial">
+			</font></p><p style="text-align: justify; margin-top: 0; margin-bottom: 0"><font size="2" face="Arial">
+        	&nbsp;</font></p><p style="text-align: justify; margin-top: 0; margin-bottom: 0"><font size="2" face="Arial">
+        	<font size="2" face="Arial">If a VCP driver is required for Android please refer to the 
+						following application note:
+						<a class="style1" href="http://www.ftdichip.com/Support/Documents/TechnicalNotes/TN_132_Adding_FTDI_Devices_VCP_Driver_Support_to_Android.pdf" target="_blank">
+						TN 132 Adding FTDI Devices VCP Driver Support to Android</a></font></font></p><p style="text-align: justify; margin-top: 0; margin-bottom: 0"><font size="2" face="Arial">&nbsp;</font></p><font size="2" face="Arial">
+					
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+			<font size="2"><strong>D3XX</strong></font></p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+			<font size="2" face="Arial">D3XX drivers are only suitable for FTDI's Superspeed USB bridge services (e.g. FT60x series).</font></p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        	&nbsp;</p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        	<strong>C</strong><font size="2"><strong>ontacting Technical Support</strong></font>&nbsp;</p>
+		For technical queries relating to drivers or any of our other products
+ or services, please send an email to our Customer Engineering Support 
+		team in your region:<br><br><font face="Arial" color="#FFFFFF"> 
+			</font><p style="margin-top: 0; margin-bottom: 0; " class="auto-style3"><font face="Arial" color="#FFFFFF">
+			
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<a class="style30" href="mailto:support1@ftdichip.com">EMEA</a><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>&nbsp;<a href="http://www.ftdichip.com/FTContact.htm#USA"></a><a class="style30" href="mailto:us.support@ftdichip.com">Americas</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+			<a class="style30" href="mailto:tw.support1@ftdichip.com">Asia Pacific (Taiwan 
+			office)</a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+			<a class="style30" href="mailto:cn.support@ftdichip.com">Asia Pacific (China 
+			office)</a>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+		</p><p style="margin-top: 0; margin-bottom: 0">&nbsp;</p><p style="margin-top: 0; margin-bottom: 0">
+			Alternatively, please 
+			<a class="style30" href="http://www.ftdichip.com/FTContact.htm">click here</a> to access the 
+			list of regional office telephone numbers if you wish to call one of the regional support teams 
+			directly. 
+			</p><p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+        	&nbsp;</p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+			&nbsp;</p>
+			<p style="text-align: justify; margin-top: 0; margin-bottom: 0">
+			&nbsp;</p>
+        &nbsp;
+
+
+        <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p></font></font></div><font size="2" face="Arial"><font size="2" face="Arial">   
+	</font></font></td>
+  </tr>
+   
+  </tbody></table>
+</div>
+<!-- Finish -->
+	</td>
+  </tr>
+</tbody></table>
+<div align="left">
+  <table style="border-collapse: collapse" width="100%" cellspacing="0" cellpadding="0" bordercolor="#111111" border="0">
+    <tbody><tr>
+      <td width="175">
+      <p align="center"><br>
+      <br>
+      &nbsp;</p></td>
+      <td>
+      <p align="center">
+<span style="font-size: 10.0pt; font-family: Arial; color: navy">© Future Technology Devices International Ltd. </span></p></td>
+    </tr>
+  </tbody></table>
+</div>
+<br>
+<div align="center">&nbsp;</div>
+
+</body></html>

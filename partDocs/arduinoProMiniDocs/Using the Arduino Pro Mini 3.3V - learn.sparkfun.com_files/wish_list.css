@@ -1,0 +1,126 @@
+.sfe-wish-list {
+  border: 1px solid #eee;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 10px;
+  background: #fff;
+  color: #333;
+}
+.sfe-inner {
+  max-height: 390px;
+  overflow: auto;
+}
+.sfe-row {
+  border-bottom: 1px solid #eee;
+  height: 68px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+.sfe-wish-list a img {
+  float: left;
+  padding-right: 10px;
+  border: none;
+}
+.sfe-wish-list a, .sfe-wish-list a:hover, .sfe-wish-list a:active, .sfe-wish-list a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+.sfe-title {
+  background-color: #eee;
+  color: #333;
+  display: block;
+  padding: 5px 5px 5px 10px;
+  overflow: auto;
+}
+.sfe-title .sfewl {
+  font-size: 12px;
+  color: #888;
+}
+.sfe-title a {
+  color: #333;
+  font-size: 16px;
+  line-height: 30px;
+  float: left;
+  display: block;
+}
+.sfe-title form {
+  display: inline;
+  float: right;
+  margin: 0;
+}
+.sfe-wish-list .button {
+  background: #fff;
+  color: #e6321e;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.sfe-wish-list .button:hover {
+  color: #fff;
+  background: #e6321e;
+  border-color: #e6321e;
+}
+.sfe-row a {
+  color: #e6321e;
+  display: block;
+  font-size: 14px;
+  height: 58px;
+  width: 100%;
+}
+.sfe-row:hover {
+  background-color: #f8f8f8;
+}
+.sfe-text {
+  display: block;
+  padding: 5px 0 0;
+  margin: 0 5px 0 70px;
+}
+.sfe-item-title {
+  display: block;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  line-height: 16px;
+}
+.sfe-description {
+  color: #333;
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.sfe-sku {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.sfe-footer {
+  padding: 20px 0;
+  text-align: center;
+}
+.sfe-stock {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  background: url(https://www.sparkfun.com/images/framework/color-bubble-sprite.png);
+  background-position: 0 2px;
+  background-repeat: no-repeat;
+}
+.sfe-stock-limited {
+  background-position: 0 -14px;
+}
+.sfe-stock-in {
+  background-position: 0 -30px;
+}
+.sfe-stock-pre {
+  background-position: 0 -46px;
+}
+.sfe-stock-retired {
+  background-position: 0 -62px;
+}
